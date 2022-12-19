@@ -53,7 +53,7 @@
 }
 
 h1 {
-    background-image: url('./assets/img/starss.gif');
+    background-image: url('./assets/img/effect.gif');
     background-position: center;
     background-size: cover;
    background-clip:text;
@@ -64,8 +64,8 @@ h1 {
 .pictrophy {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 80px;
+    justify-content: flex-end;  
+    filter: drop-shadow(0 0 5rem rgb(20, 220, 73));
 }
 
 .picoftrophy {
