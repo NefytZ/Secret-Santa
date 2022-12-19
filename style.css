@@ -1,4 +1,87 @@
-body {
-    background-color: red;
-    color: white;
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
 }
+
+.bloc {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bloc video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left:50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+.bloc::before {
+    position: absolute;
+   content:"";
+   height:100%;
+   width:100%;
+   background-color:#0000003d;
+   z-index: -99;
+}
+
+.videooftheday {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.videooftheday video {
+   width:25%;
+   z-index: 98;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    font-weight:800;
+}
+
+h1 {
+    background-image: url('./assets/img/starss.gif');
+    background-position: center;
+    background-size: cover;
+   background-clip:text;
+   -webkit-background-clip: text;
+   color: transparent;
+}
+
+.pictrophy {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+}
+
+.picoftrophy {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
